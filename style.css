@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2%;
+}
+.logo{
+    font-size: 25px;
+    
+    
+}
+.logo span{
+    font-weight: 800;
+    font-size: 30px;
+}
+.txt{
+    width: 30%;
+    padding-left: 2%;
+    border-left: 1px solid gray;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.nav-links .a{
+    margin-left: 2%;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    border-right: 1px solid gray;
+    padding-right: 2%;
+}
+.menu{
+    display: none;
+}
+.home{
+    background: url('images/slider-02.png');
+   
+    background-size:contain ;
+    
+}
+.div{
+    background-color: rgba(181, 218, 243, 0.7);
+    height: 100%;
+}
+.servhead span{font-weight: 750;
+}
+.services .card{
+    display: flex;
+}
+.car{
+    position: relative;
+}
+.car .card{
+    position: absolute;
+    height: 220px;
+    padding: 2%;
+    
+}
+.car .card img{
+    width: 80px;
+}
+.visa i{
+    padding: 30px;
+    font-size: 30px;
+    border-radius: 50%;
+}
+footer i{
+    background-color: aliceblue;
+    color: #111;
+}
+footer{
+    background-color: #110d16;
+}
+footer a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    width: 10%;
+}
+.center{
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+@media screen and (max-width:850px) {
+    
+    .menu{
+        display: block;
+       float: left;
+        color: #111;
+    } 
+    .nav-links a{
+        padding-top: 10px;
+        padding-bottom: 10px;
+      
+    }
+    .car .card{
+        height: 220px;
+        display: block;
+    }
+    .txt{
+        display: none;
+    }
+    .nav-links {
+        background-color: rgb(242, 245, 248);
+        position: absolute;
+        left: -100%;
+        top :14%;
+        flex-direction: column;
+        transition: all 500ms;
+        width: 100%;
+        text-align: center;
+        z-index: 3;
+    }
+    .toggle{
+        left: 0;
+    }
+    footer a{
+       
+       width: 20%;
+       
+    }}
